@@ -1,0 +1,40 @@
+{
+  "name": "spectro-drom",
+  "version": "0.1.0",
+  "description": "Spectrum Analyzer",
+  "main": "lib",
+  "directories": {
+    "doc": "docs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "timestamp": "2024-11-09",
+  "scripts": {
+    "test": "eslint lib",
+    "browserify": "browserify ./lib/app.js > docs/app.js",
+    "build": "browserify ./lib/app.js | terser --compress -o docs/app.js",
+    "watch": "watchify ./lib/app.js -o docs/app.js -v"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drom/spectro.git"
+  },
+  "author": "Aliaksei Chapyzhenka",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/drom/spectro/issues"
+  },
+  "homepage": "https://github.com/drom/spectro#readme",
+  "devDependencies": {
+    "@drom/eslint-config": "^0.12.0",
+    "browserify": "^17.0.0",
+    "eslint": "^8.56.0",
+    "onml": "^2.1.0",
+    "terser": "^5.26.0",
+    "watchify": "^4.0.0"
+  },
+  "eslintConfig": {
+    "extends": "@drom/eslint-config/eslint8/node12"
+  }
+}
