@@ -1,6 +1,6 @@
 {
   "name": "spectro-drom",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Spectrum Analyzer",
   "main": "lib",
   "directories": {
@@ -9,7 +9,7 @@
   "engines": {
     "node": ">=18"
   },
-  "timestamp": "2024-11-09",
+  "timestamp": "2024-11-10",
   "scripts": {
     "test": "eslint lib",
     "browserify": "browserify ./lib/app.js > docs/app.js",
