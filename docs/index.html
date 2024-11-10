@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 fill=%22grey%22 font-size=%2290%22>⚡</text></svg>">
     <title>SpectroDrom</title>
-    <style>
+    <style  type="text/css">
       @font-face {
         font-family: 'Iosevka Drom Web';
         font-display: swap;
@@ -38,6 +38,40 @@
         font-style: italic;
         src: url('./IosevkaDrom-Italic.woff2') format('woff2');
       }
+      body {
+        margin: 8px;
+        padding: 0;
+        background-color: #222;
+        font-family: 'Iosevka Drom Web';
+        font-size: 16px;
+      }
+      button {
+        padding: 32px;
+        background-color: #555;
+        color: #fff;
+      }
+      #root {
+        align-content: center;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+        background-color: #000;
+        width: 100%;
+        height: 100%;
+      }
+      .grid1 {
+        stroke: #aaa;
+        stroke-width: 1px;
+      }
+      .grid2 {
+        stroke: #555;
+        stroke-width: 1px;
+      }
+      .text2l { fill: #fff; text-anchor: start; }
+      .text2r { fill: #fff; text-anchor: end; }
+      .text2c { fill: #fff; text-anchor: middle; }
+      .mline  { fill: none; stroke: #ffd000; }
+      .xline  { fill: none; stroke: #00fff7; }
     </style>
     <script src="app.js"></script>
   </head>
