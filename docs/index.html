@@ -60,18 +60,23 @@
         height: 100%;
       }
       .grid1 {
-        stroke: #aaa;
+        stroke: #999;
         stroke-width: 1px;
       }
       .grid2 {
-        stroke: #555;
+        stroke: #444;
         stroke-width: 1px;
       }
       .text2l { fill: #fff; text-anchor: start; }
       .text2r { fill: #fff; text-anchor: end; }
       .text2c { fill: #fff; text-anchor: middle; }
-      .mline  { fill: none; stroke: #ffd000; }
-      .xline  { fill: none; stroke: #00fff7; }
+      .text2lb { fill: #fff; font-weight: bold; text-anchor: start; }
+      .text2rb { fill: #fff; font-weight: bold; text-anchor: end; }
+      .text2cb { fill: #fff; font-weight: bold; text-anchor: middle; }
+      .mline  { fill: none; stroke: #ffd000; stroke-linejoin: round; }
+      .tline  { fill: none; stroke: #ffd00092; stroke-linejoin: round; }
+      .xline  { fill: none; stroke: #00fff7; stroke-linejoin: round; }
+      .cursor { fill: none; stroke: #eeeeee; stroke-dasharray: 2 5;}
     </style>
     <script src="app.js"></script>
   </head>
