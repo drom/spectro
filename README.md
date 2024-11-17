@@ -1,5 +1,7 @@
 Spectrum Analyzer Web UI
 
+![](screenshot.gif)
+
 ## Supported HW
 
 NWTxxxx style USB-Serial FTDI connected spectrum analyzers.
